@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+      <div class="col" style="padding: 15%;">
+        <h2 class="bold text-success text-center">Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input
+            [(ngModel)]="this.Email" name="Email"
+            type="email"
+            class="form-control" placeholder="Email address" required="">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input [(ngModel)]="this.Password" name="Password"
+            type="password"
+            class="form-control" placeholder="Password" required="">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+        </form>
+      </div>
+    </div>
+    <!--button type="submit" class="btn btn-primary" routerLink="../home/users">Test</button-->
+  </div>
